@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>How it works — Upload and Video Clipper Manager</title>
+  <meta name="description" content="Step-by-step instructions for clipping videos and uploading to YouTube (TikTok coming soon)." />
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <div class="nav">
+      <div class="brand">Upload and Video Clipper Manager</div>
+      <div class="links">
+        <a href="./">Home</a>
+        <a href="./how-it-works.html">How it works</a>
+        <a href="./privacy.html">Privacy</a>
+        <a href="./terms.html">Terms</a>
+        <a href="./support.html">Support</a>
+      </div>
+    </div>
+
+    <section class="box">
+      <h1>How it works</h1>
+      <p>
+        This desktop application helps creators clip videos and upload content to supported platforms using a user-initiated workflow.
+        YouTube uploads are available now. TikTok upload support is coming soon.
+      </p>
+      <div>
+        <span class="pill"><span class="dot"></span> YouTube: Available</span>
+        <span class="pill"><span class="dot warn"></span> TikTok: Coming soon</span>
+      </div>
+
+      <h2>Step 1 — Open a video</h2>
+      <p>Click <strong>Open Video</strong> to load a file into the player. Preview playback and scrub the timeline.</p>
+      <div class="shot">
+        <img class="zoomable" src="images/06-main-window-chose.png" alt="Main screen" />
+        <div class="cap">Main screen: open and preview a video before clipping or uploading.</div>
+      </div>
+
+      <h2>Step 2 — Clip the video</h2>
+      <p><strong>Manual clipping:</strong> choose start/end or click pin to mark start/end timestamps and add clips with full control.</p>
+      <div class="shot">
+        <img class="zoomable" src="images/05-manual-clipping.png" alt="Manual clipping" />
+        <div class="cap">Manual clipping: select timestamps and build a list of clips.</div>
+      </div>
+
+      <h2>Step 2.1 — Clip the video</h2>
+      <p><strong>Manual clipping:</strong> You can edit or delete the clips after they are generated, double click will also send you to that part of the video.</p>
+      <div class="shot">
+        <img class="zoomable" src="images/05.1-manual-clipping.png" alt="Manual clipping" />
+        <div class="cap">Manual clipping: select timestamps and build a list of clips.</div>
+      </div>
+
+      <p><strong>Automatic clipping:</strong> choose an interval (1–20 minutes) and generate clips automatically.</p>
+      <div class="shot">
+        <img class="zoomable" src="images/04-automatic-clipping.png" alt="Automatic clipping interval" />
+        <div class="cap">Automatic clipping: pick an interval and start processing.</div>
+      </div>
+
+      <div class="shot">
+        <img class="zoomable" src="images/06-generated.png" alt="Generated clips confirmation" />
+        <div class="cap">Processing result: confirmation after clips are generated.</div>
+      </div>
+
+      <div class="shot">
+        <img class="zoomable" src="images/07-save-clips.png" alt="Generated clips confirmation" />
+        <div class="cap">Clips are saved on output_clips folder unless change in settings.</div>
+      </div>
+
+      <h2>Step 3 — Review clips and build the upload queue</h2>
+      <p>Select items and click <strong>Add Selected to Queue</strong> to prepare uploads.</p>
+      <div class="shot">
+        <img class="zoomable" src="images/08-folders.png" alt="Video folder selection" />
+        <div class="cap">Browse folders and choose content to add to the upload queue.</div>
+      </div>
+
+      <h2>Step 4 — Edit video information (bulk)</h2>
+      <p>Use <strong>Edit Video Info (Bulk)</strong> to set title, description, tags, language, privacy, thumbnails, and more.</p>
+      <div class="shot">
+        <img class="zoomable" src="images/02-upload-info.png" alt="Upload Video Info window" />
+        <div class="cap">Upload Video Info: set metadata before uploading to YouTube.</div>
+      </div>
+
+      <h2>Step 5 — Upload to YouTube</h2>
+      <ol>
+        <li>Click <strong>Login to YouTube</strong> and sign in.</li>
+        <li>The app shows a connected status (e.g., “Welcome …”).</li>
+        <li>Click <strong>Upload Videos to YouTube</strong> to upload items from the queue.</li>
+      </ol>
+
+      <div class="shot">
+        <img class="zoomable" src="images/03-youtube-connected.png" alt="YouTube connected" />
+        <div class="cap">YouTube connected: the app displays status and enables uploads.</div>
+      </div>
+
+      <div class="shot">
+        <img class="zoomable" src="images/09-youtube-disconnected.png" alt="YouTube disconnected" />
+        <div class="cap">YouTube disconnected: login is required to upload.</div>
+      </div>
+
+      <h2>TikTok upload (coming soon)</h2>
+      <p>
+        TikTok upload support is under development and will be enabled after TikTok API approval.
+        The planned flow includes TikTok login and user-initiated uploads.
+      </p>
+
+      <h2>User control & consent</h2>
+      <ul>
+        <li>Uploads are initiated by the user and require user confirmation.</li>
+        <li>No automatic/background uploads are performed.</li>
+        <li>Users remain responsible for their content and platform compliance.</li>
+      </ul>
+    </section>
+
+    <div class="footer">
+      <div>© <span id="y"></span> Upload and Video Clipper Manager</div>
+      <div>
+        <a href="./terms.html">Terms</a> ·
+        <a href="./privacy.html">Privacy</a> ·
+        <a href="./support.html">Support</a>
+      </div>
+    </div>
+  </div>
+
+<div id="imgModal" class="modal" aria-hidden="true">
+  <button class="close-modal" id="closeModalBtn" aria-label="Close image modal">
+    &times;
+  </button>
+  <img class="modal-content" id="modalImg" alt="Expanded screenshot" />
+</div>
+
+<script src="script/script.js"></script>
+</body>
+</html>

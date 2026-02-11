@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Upload and Video Clipper Manager</title>
+  <meta name="description" content="Desktop app to clip videos and upload to YouTube. TikTok support coming soon." />
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <div class="nav">
+      <div class="brand">Upload and Video Clipper Manager</div>
+      <div class="links">
+        <a href="./">Home</a>
+        <a href="./how-it-works.html">How it works</a>
+        <a href="./privacy.html">Privacy</a>
+        <a href="./terms.html">Terms</a>
+        <a href="./support.html">Support</a>
+      </div>
+    </div>
+
+    <section class="hero">
+      <h1>Clip videos. Prepare metadata. Upload to YouTube.</h1>
+      <p>
+        A desktop application that helps creators clip videos and upload content to supported platforms with explicit user permission.
+        <strong>YouTube is available now.</strong> TikTok upload support is coming soon.
+      </p>
+
+      <div>
+        <span class="pill"><span class="dot"></span> YouTube: Available</span>
+        <span class="pill"><span class="dot warn"></span> TikTok: Coming soon</span>
+      </div>
+
+      <p class="small">
+        Uploads are initiated by the user. This app is not affiliated with or endorsed by YouTube or TikTok.
+      </p>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h2>What it does</h2>
+        <ul>
+          <li>Open and preview videos with playback controls.</li>
+          <li>Create clips manually or by automatic intervals.</li>
+          <li>Bulk edit upload info (title, description, tags, privacy, thumbnails).</li>
+          <li>Upload to YouTube after login and user confirmation.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Platforms</h2>
+        <ul>
+          <li><strong>YouTube:</strong> Sign in → set video info → upload.</li>
+          <li><strong>TikTok:</strong> “Coming soon” while API integration is in progress.</li>
+          <li>All uploads are user-initiated (no background posting).</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="shots">
+      <h2>Screenshots</h2>
+      <div class="shots-grid">
+        <figure>
+          <img class="zoomable" src="images/01-main.png" alt="Main app screen" />
+          <figcaption>Main screen: open and preview a video before clipping or uploading.</figcaption>
+        </figure>
+        <figure>
+          <img class="zoomable" src="images/02-upload-info.png" alt="Upload Video Info window" />
+          <figcaption>Bulk “Upload Video Info”: title, description, tags, privacy, thumbnail, and more.</figcaption>
+        </figure>
+        <figure>
+          <img class="zoomable" src="images/03-youtube-connected.png" alt="YouTube connected screen" />
+          <figcaption>YouTube connected: shows welcome status and enables uploads.</figcaption>
+        </figure>
+        <figure>
+          <div class="figure-row">
+            <img class="zoomable" src="images/05-manual-clipping.png" alt="Manual clipping options" />
+            <img class="zoomable" src="images/04-automatic-clipping.png" alt="Automatic clipping result" />
+          </div>
+          <figcaption>Automatic and manual clipping: generate clips at a chosen interval.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="steps">
+      <h2>Quick start</h2>
+      <ol>
+        <li>Click <strong>Open Video</strong> and load your file.</li>
+        <li>Use <strong>Manual</strong> or <strong>Automatic</strong> clipping to generate clips.</li>
+        <li>Add selected clips to the upload queue.</li>
+        <li>Click <strong>Edit Video Info (Bulk)</strong> to set metadata.</li>
+        <li>Click <strong>Login to YouTube</strong>, then <strong>Upload Videos to YouTube</strong>.</li>
+      </ol>
+      <p class="small">For full details, see the <a href="./how-it-works.html">How it works</a> page.</p>
+    </section>
+
+    <div class="footer">
+      <div>© <span id="y"></span> Upload and Video Clipper Manager</div>
+      <div>
+        <a href="./terms.html">Terms</a> ·
+        <a href="./privacy.html">Privacy</a> ·
+        <a href="./support.html">Support</a>
+      </div>
+    </div>
+  </div>
+
+<div id="imgModal" class="modal" aria-hidden="true">
+  <button class="close-modal" id="closeModalBtn" aria-label="Close image modal">
+    &times;
+  </button>
+  <img class="modal-content" id="modalImg" alt="Expanded screenshot" />
+</div>
+
+<script src="script/script.js"></script>
+</body>
+</html>
